@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bankappprojectnav.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_lockFragment"
+            app:destination="@id/lockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lockFragment"
+        android:name="com.example.bankappprojectnav.LockFragment"
+        android:label="fragment_lock"
+        tools:layout="@layout/fragment_lock" >
+        <action
+            android:id="@+id/action_lockFragment_to_longFragment"
+            app:destination="@id/longFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/longFragment"
+        android:name="com.example.bankappprojectnav.LongFragment"
+        android:label="fragment_long"
+        tools:layout="@layout/fragment_long" >
+        <action
+            android:id="@+id/action_longFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.example.bankappprojectnav.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" >
+        <action
+            android:id="@+id/action_cardFragment_to_iconFragment"
+            app:destination="@id/iconFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/iconFragment"
+        android:name="com.example.bankappprojectnav.IconFragment"
+        android:label="fragment_icon"
+        tools:layout="@layout/fragment_icon" >
+        <action
+            android:id="@+id/action_iconFragment_to_memberFragment"
+            app:destination="@id/memberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memberFragment"
+        android:name="com.example.bankappprojectnav.MemberFragment"
+        android:label="fragment_member"
+        tools:layout="@layout/fragment_member" >
+        <action
+            android:id="@+id/action_memberFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.bankappprojectnav.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/action_messageFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="com.example.bankappprojectnav.TransferFragment"
+        android:label="fragment_transfer"
+        tools:layout="@layout/fragment_transfer" />
+</navigation>
